@@ -1,0 +1,1 @@
+FROM fabric8/java-alpine-openjdk8-jdk:1.5.4
