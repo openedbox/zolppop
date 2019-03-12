@@ -3,7 +3,7 @@
 相关环境变量如下:
 # env APP_PROFILE native or git
 # when APP_PROFILE is native
-# env APP_CONFIG_REPO_DIR for config file location, pls mount host dir and point it
+# env APP_CONFIG_NATIVE_REPO_DIR for config file location, pls mount host dir and point it
 # when APP_PROFILE is git
 # env APP_CONFIG_GIT_REPO_URL for git url
 # env APP_CONFIG_GIT_REPO_BASEDIR for base dir
