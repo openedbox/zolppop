@@ -1,5 +1,5 @@
 FROM rabbitmq:3.7-alpine
-RUN rabbitmq-plugins enable --offline rabbitmq_management rabbitmq_web_stomp rabbitmq_stomp
+RUN rabbitmq-plugins enable --offline rabbitmq_management rabbitmq_web_stomp rabbitmq_stomp rabbitmq_web_mqtt
 
 # extract "rabbitmqadmin" from inside the "rabbitmq_management-X.Y.Z.ez" plugin zipfile
 # see https://github.com/docker-library/rabbitmq/issues/207
@@ -23,4 +23,4 @@ RUN set -eux; \
 	apk add --no-cache python; \
 	rabbitmqadmin --version
 
-EXPOSE 15671 15672 15674
+EXPOSE 15671 15672 15674 15675
